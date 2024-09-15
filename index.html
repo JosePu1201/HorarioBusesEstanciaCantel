@@ -1,11 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Horarios de Buses</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            font-size: 1.2em;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+        table {
+            margin: 0 auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+        td {
+            text-align: center;
+            background-color: #e9ecef;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="container">
+        <p>Esta página está hecha con el fin de facilitar a los usuarios de buses que van desde Xecam y pasan por la Estancia con rumbo a Quetzaltenango y viceversa.</p>
+
+        <div class="table-container">
+            <h1>Horarios</h1>
+            <br>
+            <h2>De Xecam a Xela</h2>
+            <hr>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Lugar</th>
+                        <th>Xecam</th>
+                        <th>Mercado de la Estancia</th>
+                        <th>Segunda parada de la Estancia</th>
+                        <th>Primera parada de la Estancia</th>
+                        <th>Clínica Alameda</th>
+                        <th>Barbería el Tikal</th>
+                        <th>Entrada de la Estancia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hora aproximada</td>
+                        <td>5:00 AM</td>
+                        <td>5:15 AM</td>
+                        <td>5:25 AM</td>
+                        <td>5:28 AM</td>
+                        <td>5:30 AM</td>
+                        <td>5:30 AM</td>
+                        <td>5:35 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>De Xela a Xecam</h2>
+            <!-- Aquí puedes agregar otra tabla similar para el horario de vuelta -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
